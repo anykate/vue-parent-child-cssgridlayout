@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const toggleExpand = ref(false)
 
@@ -20,10 +20,18 @@ const handleClick = () => {
         <aside class="dashboard-sidebar">
             <div class="logo">&#9812;</div>
             <button
+				v-if="!toggleExpand"
                 type="button"
                 @click="handleClick"
             >
-                &#9776;
+			<i class="fa-solid fa-circle-arrow-right"></i>
+            </button>
+			<button
+				v-else
+                type="button"
+                @click="handleClick"
+            >
+			<i class="fa-solid fa-circle-arrow-left"></i>
             </button>
         </aside>
         <main class="dashboard-main">
@@ -86,13 +94,14 @@ const handleClick = () => {
 
 .dashboard-sidebar button {
     position: absolute;
-    inset: 4.5rem -0.75rem auto auto;
-    width: 1.5rem;
+    inset: 4.5rem -20px auto auto;
+    width: 2.5rem;
     aspect-ratio: 1;
     background-color: #fff;
     border: transparent;
     border-radius: 50%;
     cursor: pointer;
+	font-size: 22px;
 }
 
 .logo {
