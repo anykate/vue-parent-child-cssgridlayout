@@ -14,7 +14,8 @@ const handleClick = () => {
 		:class="{ 'sb-expand': toggleExpand }"
 	>
 		<header class="dashboard-header">
-			<router-link :to="{ name: 'Home' }">Home</router-link> |
+			<router-link :to="{ name: 'Home' }">Home</router-link>
+			|
 			<router-link :to="{ name: 'About' }">About</router-link>
 		</header>
 		<aside class="dashboard-sidebar">
