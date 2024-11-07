@@ -10,8 +10,8 @@ const handleClick = () => {
 
 <template>
 	<div
-		class="wrapper"
 		:class="{ 'sb-expand': toggleExpand }"
+		class="wrapper"
 	>
 		<header class="dashboard-header">
 			<router-link :to="{ name: 'Home' }">Home</router-link>

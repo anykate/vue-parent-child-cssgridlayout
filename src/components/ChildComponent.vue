@@ -30,8 +30,8 @@ const handleSubmit = (e) => {
 	<form @submit.prevent="handleSubmit">
 		<input
 			v-model.lazy="nameInput"
-			type="text"
 			placeholder="Enter Name..."
+			type="text"
 		/>
 		<button type="submit">Click me</button>
 	</form>
