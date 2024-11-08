@@ -8,8 +8,10 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "eslint --fix 'src/**/*.{js,ts,jsx,tsx,vue}'",
+		"lint-windows": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,vue}\"",
 		"prettier": "npx prettier . --write",
-		"format": "npm run lint && npm run prettier"
+		"format": "npm run lint && npm run prettier",
+		"format-windows": "npm run lint-windows && npm run prettier"
 	},
 	"dependencies": {
 		"axios": "^1.7.7",
